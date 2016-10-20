@@ -91,13 +91,8 @@ $queryUs = mysqli_query(conector::conexion(), $user);
                         </select></br><br>
                     </div></br></br>
                     <div class="col-md-4">
-<<<<<<< HEAD
-                        <label>Contratos</label></br>
-                        <select name="contra">
-=======
                         <label>Contrato</label></br>
                         <select name="prov">
->>>>>>> origin/master
                             <option value=""></option>
                             <option value="1">Esta chido</option>
                             <option value="2">No esta chido</option>
@@ -128,11 +123,7 @@ $queryUs = mysqli_query(conector::conexion(), $user);
                             <a href='control/cerrarSesion.php' class="btn btn-primary btn-md" target="_top">Salir</a><br><br>
 
                         </div>
-<<<<<<< HEAD
-                    </div>          
-=======
                     </div>     
->>>>>>> origin/master
 
                 </div>
             </form>
