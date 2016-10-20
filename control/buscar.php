@@ -13,18 +13,18 @@ $buscar = "SELECT * FROM registro_gral where registro= '" . $folio . "'";
 
 $query = mysqli_query(conector::conexion(), $buscar);
 
-while ($reg = mysqli_fetch_array($query)) {
-
-if () {
-    
-    
-
-    header('Location: ./controlador.php?numUs= ' . $reg['id_usuarios'] . '');
-    
-} else {
-
-     echo '<script language="javascript">alert("No se encontro en la base de datos");
-                  window.location.href="../administradores.php";
-                  </script>';
-}
-}
+//while ($reg = mysqli_fetch_array($query)) {
+//
+//if () {
+//    
+//    
+//
+//    header('Location: ./controlador.php?numUs= ' . $reg['id_usuarios'] . '');
+//    
+//} else {
+//
+//     echo '<script language="javascript">alert("No se encontro en la base de datos");
+//                  window.location.href="../administradores.php";
+//                  </script>';
+//}
+//}

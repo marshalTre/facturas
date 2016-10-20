@@ -18,23 +18,25 @@ $fechaFac = filter_input(INPUT_POST, 'date');
 $capturista = filter_input(INPUT_POST, 'captur');
 
 
-$consulta = "INSERT INTO facturas(no_factura, importe, fecha_factura, usuarios_id_usuario, cat_contrato_id_contrato, cat_proveedor_id_proveedor)
-    VALUES ('$factura','$importe','$fechaFac','$capturista','$contrato','$provedor')";
+//$consulta = "INSERT INTO facturas(no_factura, importe, fecha_factura, usuarios_id_usuario, cat_contrato_id_contrato, cat_proveedor_id_proveedor)
+//    VALUES ('$factura','$importe','$fechaFac','$capturista','$contrato','$provedor')";
 
-$query = mysqli_query(conector::conexion(), $consulta);
+$revisar="select * from facturas where id_factura=1";
+
+$query = mysqli_query(conector::conexion(), $revisar);
 
 
 
 
 
-if($consulta > 0){
-    
-    
-    echo 'Se genero bien el query';
-    
-}else{
-    
-    echo 'No se genera el query'. mysqli_error(conector::conexion(), $consulta);
-}
+//if($consulta > 0){
+//    
+//    
+//    echo 'Se genero bien el query';
+//    
+//}else{
+//    
+////    echo 'No se genera el query'. mysqli_error(conector::conexion(), $consulta);
+//}
 //header('Location: ./controlador.php?captu= '. $capturista.'');
 
