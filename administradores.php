@@ -74,10 +74,7 @@ $queryUs = mysqli_query(conector::conexion(), $user);
                         <label>Numero de Factura</label></br>
                         <input type="text" name="fact" class="organizacion" placeholder="Factura" size="70" onChange="conMayusculas(this)" required >
                     </div>
-                    <div class="col-md-3 col-md-offset-1">
-                        <label>Numero de Contrato</label></br>
-                        <input type="text" name="cont" class="organizacion" placeholder="Contrato" size="70" onChange="conMayusculas(this)" required ></br></br>
-                    </div>    
+                    
                 </div>
                 <div class="row">
                     <div class="col-md-4">            
@@ -93,9 +90,9 @@ $queryUs = mysqli_query(conector::conexion(), $user);
 
                         </select></br><br>
                     </div></br></br>
-                     <div class="col-md-4">
-                        <label>Contrato</label></br>
-                        <select name="prov">
+                    <div class="col-md-4">
+                        <label>Contratos</label></br>
+                        <select name="contra">
                             <option value=""></option>
                             <option value="1">Esta chido</option>
                             <option value="2">No esta chido</option>
@@ -103,10 +100,6 @@ $queryUs = mysqli_query(conector::conexion(), $user);
                         </select></br><br>
                     </div></br></br>
                     <div class="row">
-<!--                        <div class="col-md-6">
-                            <label>Remisiones</label></br>
-                            <input type="text" name="remi" class="calle" placeholder="Remision" size="40" onChange="conMayusculas(this)" required >
-                        </div>-->
                         <div class="col-md-6">
                             <label>Fecha de factura</label>
                             <input type="text" name="date" class="datepicker" placeholder="Elige una fecha" >
@@ -130,24 +123,24 @@ $queryUs = mysqli_query(conector::conexion(), $user);
                             <a href='control/cerrarSesion.php' class="btn btn-primary btn-md" target="_top">Salir</a><br><br>
 
                         </div>
-                    </div>
+                    </div>          
+
+                </div>
             </form>
-
         </div>
-    </div>
 
-    <aside>
+        <aside>
 
-    </aside>
+        </aside>
 
-    <footer>
+        <footer>
 
-    </footer>
+        </footer>
 
-    <script src="css/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
-    <script src="css/bootstrap-3.3.6-dist/js/jquery-1.11.3.min.js"></script> 
-    <script src="js/bootstrap-datepicker.js"></script> 
-    <!--        archivos necesarios para generar los jquery y javascript de bootstrap sin internet-->
+        <script src="css/bootstrap-3.3.6-dist/js/bootstrap.js"></script>
+        <script src="css/bootstrap-3.3.6-dist/js/jquery-1.11.3.min.js"></script> 
+        <script src="js/bootstrap-datepicker.js"></script> 
+        <!--        archivos necesarios para generar los jquery y javascript de bootstrap sin internet-->
 
-</body>
+    </body>
 </html>
